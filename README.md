@@ -71,14 +71,14 @@ cp .env.example .env
 - Add to `.env`:
   ```
   GROQ_API_KEY=your_key_here
-  GROQ_MODEL=mixtral-8x7b-32768
+  GROQ_MODEL=llama-3.3-70b-versatile
   ```
 
 ### 3. Create `.env` file
 ```env
 GROQ_API_KEY=your_groq_key
 TAVILY_API_KEY=your_tavily_key
-GROQ_MODEL=mixtral-8x7b-32768
+GROQ_MODEL=llama-3.3-70b-versatile
 DEBUG=True
 LOG_LEVEL=INFO
 ENABLE_WEB_SEARCH=True
@@ -90,43 +90,43 @@ ENABLE_MEMORY=True
 
 ### Run a Task
 ```bash
-python -m src.main run "Research machine learning and write a beginner guide"
+python -m main run "Research machine learning and write a beginner guide"
 ```
 
 ### Interactive Chat Mode
 ```bash
-python -m src.main chat
+python -m main chat
 ```
 
 ### Research Command
 ```bash
-python -m src.main research "quantum computing" --deep
+python -m main research "quantum computing" --deep
 ```
 
 ### Write Content
 ```bash
-python -m src.main write "Python async programming" --style blog
+python -m main write "Python async programming" --style blog
 ```
 
 ### Analyze Code
 ```bash
-python -m src.main analyze-code
+python -m main analyze-code
 # Then paste your code and enter 'END' when done
 ```
 
 ### View Status
 ```bash
-python -m src.main status
+python -m main status
 ```
 
 ### View History
 ```bash
-python -m src.main history --limit 20
+python -m main history --limit 20
 ```
 
 ### Clear Memory
 ```bash
-python -m src.main clear-memory
+python -m main clear-memory
 ```
 
 ## Command Examples
@@ -251,14 +251,6 @@ aria_system/
 - Check ChromaDB permissions
 - Verify `ENABLE_MEMORY=True`
 
-## Contributing
-
-Contributions welcome! Please:
-1. Fork repository
-2. Create feature branch
-3. Add tests
-4. Submit pull request
-
 ## License
 
 MIT License - see LICENSE file
@@ -270,6 +262,3 @@ For issues, questions, or suggestions:
 - Check existing issues first
 - Provide clear reproduction steps
 
----
-
-Built with ❤️ using LangChain, LangGraph, and Groq
