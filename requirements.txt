@@ -1,0 +1,43 @@
+# Core Dependencies
+python-dotenv
+pydantic
+pydantic-settings
+
+# LangChain & LLM
+langchain
+langchain-community
+langchain-groq
+langchain-core
+langchain-tavily
+
+# Graph & Orchestration
+langgraph
+
+# Memory & Storage
+chromadb
+langchain-chroma
+sqlalchemy
+
+# CLI & UI
+rich
+typer
+click
+
+# Utilities
+requests
+aiohttp
+python-dateutil
+
+# Testing
+pytest
+pytest-asyncio
+pytest-cov
+
+# Code Quality
+black
+ruff
+mypy
+
+# Async & Performance
+asyncio
+tenacity
